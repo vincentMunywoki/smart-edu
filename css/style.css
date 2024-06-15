@@ -53,6 +53,21 @@ section{
     box-shadow: 0.5rem 1rem rgba(0,0,0,.2);
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--gradient);
+}
+
 header{
     display: flex;
     align-items: center;
@@ -91,6 +106,40 @@ header .navbar a:hover{
     cursor: pointer;
     display: none;
 }
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content h3{
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.home .content p{
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+
 
 .footer .box-container{
     display: flex;
@@ -147,6 +196,7 @@ header .navbar a:hover{
 
 
 
+
 /* media queries */
 
 @media (max-width:991px){
@@ -160,6 +210,10 @@ header .navbar a:hover{
     }
 
     header{
+        padding: 2rem;
+    }
+
+    section{
         padding: 2rem;
     }
 }
@@ -193,4 +247,12 @@ header .navbar a:hover{
         text-align: center;
     }
    
+}
+
+@media (max-width:991px){
+     
+    html{
+        font-size: 50%;
+    }
+
 }
